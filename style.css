@@ -33,19 +33,15 @@ div{
     display: grid;
     text-align: center;
 }
+.item-container div, .item-container h3{
+    padding: 15px;
+}
 .logo-image{
     margin: auto;
     padding: 20px;
 }
 h3{
     color:#A276FF;
-}
-h6{
-    color: #FFFFFF;
- 
-}
-.side-bar a{
-    color:#FFFFFF;   
 }
 .sidebar-bottom{
     margin-top: auto ;
@@ -57,44 +53,97 @@ h6{
 }
 
 .sidebar-bottom h6{
-    padding-top: 25px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+    opacity: 0.25;
 }
 
 .container{
-    /* margin: 60px ; */
-    margin-top: 30px;
-    /* padding: 0px 10px; */
-    padding: 80px;
+    padding: 30px;
+    margin-top: 80px;
+    margin-left: 40px;
 }
-.title{
+.title h2{
+    font-size: 36px;
     padding: 10px 0;
 }
-h1{
+.title h1{
     color: #A276FF;
+    font-size: 62px;
+    line-height: 50px;
 }
 .paragraph{
-    padding: 15px 0;
+    padding: 25px 0;
+    line-height: 20px;
 }
-.image-section{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 20px 0 40px 0;
-}
+
 button{
     border-radius: 10px;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 90px 10px 90px;
     color:white;
     background-color: transparent;
     border: solid white 2px;
 
 }
+.image-section{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    padding: 30px 0 40px 0;
+    gap:40px;
+    justify-content: start;
+
+}
+.image-section img{
+    width:100%;
+    max-width:176px;
+
+}
+
+    
 .icon-image{
     width:17px;
 }
 
-.item-container div, .item-container h3{
-    padding: 15px;
-}
+@media screen  and (max-width:800px){
+    .image-section{
+        grid-template-columns: repeat(2,auto);
+        padding:20px 0;
 
+
+    }
+    .container{
+        margin: 0;
+        padding: 25px;
+
+    }
+    .title{
+        padding: 0;
+    }
+
+    .title h2{
+        font-size: 24px;
+
+    }
+    .title h1{
+        font-size: 48px;
+        
+    }
+}
+@media screen and (max-width:500px) {
+    .title h2{
+        font-size: 20px;
+
+    }
+    .title h1{
+        font-size: 22px;
+
+    }
+    button{
+        padding: 5px 30px;
+    }
+
+    
+}
 
       
